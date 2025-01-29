@@ -71,7 +71,6 @@
 </head>
 
 <body>
-
     <!-- navbar   -->
     <div class="antialiased bg-gray-100 dark-mode:bg-gray-900">
         <div class="w-full text-white bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
@@ -82,7 +81,7 @@
                         class="text-lg font-semibold tracking-widest text-amber-50 uppercase rounded-lg  focus:outline-none focus:shadow-outline">Legacy
                         Logic</a> -->
                     <!-- <a href="index.php"> -->
-                    <a href=""><img src="img/Bronco_Black.jpg" class="h-14 rounded-md"></a>
+                    <a href="index.html"><img src="img/Bronco_Black.jpg" class="h-14 rounded-md"></a>
                     <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
                         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
                             <path x-show="!open" fill-rule="evenodd"
@@ -97,26 +96,25 @@
 
                 <nav :class="{ 'flex': open, 'hidden': !open }"
                     class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row items-center">
-                    <a href="index.php">
+                    <a href="index.html">
                         <img src="img/logo.jpg" alt="" class=" w-14 mr-56 rounded-lg my-2 hidden md:block">
                     </a>
 
                     <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                        href="index.php">Accueil</a>
+                        href="index.html">Accueil</a>
                     <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                        href="#">A propos</a>
+                        href="about.html">À propos</a>
                     <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                         href="#">Nos produits</a>
                     <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                         href="#">Contact</a>
-
                 </nav>
             </div>
         </div>
     </div>
 
     <!-- Section pour afficher les vins -->
-    <section class="container mx-auto py-12 px-6 bg-cover bg-no-repeat  " style="background-image: url('img/vin_5.jpg')">
+    <section class="container mx-auto py-12 px-6 bg-cover bg-no-repeat" style="background-image: url('img/vin_5.jpg')">
         <div class="container mx-auto py-10">
             <!-- Image principale -->
             <div id="mainImageContainer" class="w-full max-w-5xl mx-auto text-center relative">
@@ -143,35 +141,35 @@
     <script>
         // Données des vins
         const wines = [{
-                image: 'img/WhatsApp_Image_2025-01-24_à_10.23.44_5778452c-removebg-preview.png',
-                name: 'Cabernet Sauvignon',
-                description: 'Classic Cabernet nose of currant, lavender, and black licorice. Smooth and rich finish.',
-                price: '40 000f'
-            },
-            {
-                image: 'img/chamapgne-bernard-remy-carte-blanche-1536x1536-removebg-preview.png',
-                name: 'Bernard Remy',
-                description: 'Je suis ma propre description',
-                price: '50 000f'
-            },
-            {
-                image: 'img/vin-ADJ_original-chardonnay-blanc-removebg-preview.png',
-                name: 'Chardonnay',
-                description: 'Rich buttery notes with hints of tropical fruit and vanilla.',
-                price: '30 000f'
-            },
-            {
-                image: 'img/champagne-copinet-marie-brut-caractere-rose-removebg-preview.png',
-                name: 'Copinet',
-                description: 'Smooth and velvety with flavors of ripe plum and cherry.',
-                price: '20 000f'
-            },
-            {
-                image: 'img/Cuvee-Precieuse-Champagne-Pinot-Chevauchet-500x500-removebg-preview.png',
-                name: 'Pinot Noir',
-                description: 'Deep red with a full-bodied flavor of blackberry and a touch of oak.',
-                price: '10 000f'
-            }
+            image: 'img/WhatsApp_Image_2025-01-24_à_10.23.44_5778452c-removebg-preview.png',
+            name: 'Cabernet Sauvignon',
+            description: 'Classic Cabernet nose of currant, lavender, and black licorice. Smooth and rich finish.',
+            price: '40 000f'
+        },
+        {
+            image: 'img/chamapgne-bernard-remy-carte-blanche-1536x1536-removebg-preview.png',
+            name: 'Bernard Remy',
+            description: 'Je suis ma propre description',
+            price: '50 000f'
+        },
+        {
+            image: 'img/vin-ADJ_original-chardonnay-blanc-removebg-preview.png',
+            name: 'Chardonnay',
+            description: 'Rich buttery notes with hints of tropical fruit and vanilla.',
+            price: '30 000f'
+        },
+        {
+            image: 'img/champagne-copinet-marie-brut-caractere-rose-removebg-preview.png',
+            name: 'Copinet',
+            description: 'Smooth and velvety with flavors of ripe plum and cherry.',
+            price: '20 000f'
+        },
+        {
+            image: 'img/Cuvee-Precieuse-Champagne-Pinot-Chevauchet-500x500-removebg-preview.png',
+            name: 'Pinot Noir',
+            description: 'Deep red with a full-bodied flavor of blackberry and a touch of oak.',
+            price: '10 000f'
+        }
         ];
 
         let currentIndex = 0; // Index de l'image actuelle
@@ -296,7 +294,8 @@
             <!-- Bouton -->
             <div class="mt-10">
                 <a href="#">
-                    <button class="px-6 py-2 bg-yellow-600 text-white font-semibold rounded-lg shadow hover:bg-yellow-500">
+                    <button
+                        class="px-6 py-2 bg-yellow-600 text-white font-semibold rounded-lg shadow hover:bg-yellow-500">
                         Voir Plus
                     </button>
                 </a>
@@ -309,17 +308,26 @@
                 <div class="flex flex-wrap justify-center gap-8">
                     <!-- Bloc 1 -->
                     <div class="w-96 h-92">
-                        <img src="img/VINNNN5.jpg" alt="Image 1" class="w-full h-full object-cover rounded-md shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img src="img/VINNNN5.jpg" alt="Image 1"
+                            class="w-full h-full object-cover rounded-md shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
                     </div>
                     <!-- Bloc 2 -->
                     <div class="w-96 h-92">
-                        <img src="img/vinPX-1.jpg" alt="Image 2" class="w-full h-full object-cover rounded-md shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img src="img/vinPX-1.jpg" alt="Image 2"
+                            class="w-full h-full object-cover rounded-md shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
                     </div>
                     <!-- Bloc 3 -->
                     <div class="w-96 h-92">
-                        <img src="img/VIN2PX.jpg" alt="Image 3" class="w-full h-full object-cover rounded-md shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img src="img/VIN2PX.jpg" alt="Image 3"
+                            class="w-full h-full object-cover rounded-md shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
                     </div>
                 </div>
+                <a href="#">
+                    <button
+                        class="px-6 py-2 bg-yellow-600 text-white font-semibold rounded-lg shadow hover:bg-yellow-500 mt-12">
+                        Voir Plus
+                    </button>
+                </a>
             </div>
 
         </div>
@@ -368,6 +376,12 @@
                             type="text" name="produits" placeholder="Produits">
                     </div>
                     <div class="mt-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">Quantité</label>
+                        <input
+                            class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none"
+                            type="number" name="quantite" placeholder="Quantité">
+                    </div>
+                    <div class="mt-4">
                         <label class="block text-gray-700 text-sm font-bold mb-2">Lieu de livraison</label>
                         <input
                             class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none"
@@ -411,10 +425,13 @@
                     <h2 class="text-lg font-semibold mb-4">Liens rapides</h2>
                     <ul class="space-y-2 text-gray-400">
                         <li>
-                            <a href="index.php" class="hover:text-yellow-500 transition-colors duration-300">Accueil</a>
+                            <a href="index.html"
+                                class="hover:text-yellow-500 transition-colors duration-300">Accueil</a>
                         </li>
                         <li>
-                            <a href="#" class="hover:text-yellow-500 transition-colors duration-300">À propos de nous</a>
+                            <a href="about.html" class="hover:text-yellow-500 transition-colors duration-300">À propos
+                                de
+                                nous</a>
                         </li>
                         <li>
                             <a href="#" class="hover:text-yellow-500 transition-colors duration-300">Nos produits</a>
@@ -474,6 +491,27 @@
         </div>
     </footer>
 
+    <!-- bouton qui permet de revenir en haut de page  -->
+    <button id="scrollToTop"
+        class="fixed bottom-5 right-5 bg-yellow-600 text-white p-4 rounded-full shadow-lg hidden transition duration-500 ease-in-out transform hover:scale-110">
+        &#8679;
+    </button>
+
+    <script>
+        const scrollToTopButton = document.getElementById("scrollToTop");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                scrollToTopButton.classList.remove("hidden");
+            } else {
+                scrollToTopButton.classList.add("hidden");
+            }
+        });
+
+        scrollToTopButton.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
 </body>
 
 </html>
