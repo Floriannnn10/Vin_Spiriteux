@@ -4,13 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page-A propos</title>
+    <title>Page-Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/x-icon" href="img/Bronco_Black.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite/dist/flowbite.min.js"></script>
+    <!-- Lien Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 
 <body class="bg-gray-100">
+
     <!-- navbar   -->
     <div class="antialiased bg-gray-100 dark-mode:bg-gray-900">
         <div class="w-full text-white bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
@@ -54,103 +59,83 @@
         </div>
     </div>
 
-    <!-- Section preentation de la page à propos  -->
-    <section class="relative h-96 bg-cover bg-no-repeat flex items-center justify-center text-white"
-        style="background-image: url('img/about_img_2.jpg');">
-        <h1 class="text-4xl font-bold ">À propos de nous</h1>
-    </section>
+    <div class="container mx-auto px-6 py-12">
+        <h2 class="text-4xl font-bold text-center text-gray-800">Contactez-nous</h2>
+        <p class="text-center text-gray-600 mt-2">Heureux que vous voir contacter BrancoWine</p>
 
-    <!-- Bloc Qui sommes-nous ? -->
-    <section class="py-16 px-6 md:px-20 bg-gray-50">
-        <div class="md:flex md:items-center">
-            <div class="md:w-1/2">
-                <h2 class="text-3xl font-semibold text-gray-800">Qui sommes-nous ?</h2>
-                <p class="text-red-500 font-bold">BrancoWine, une entreprise qui est spécialisée dans la production de
-                    Boissons & Spiritueux
+        <div class="mt-10 bg-white shadow-lg rounded-xl p-8 flex flex-col md:flex-row">
+            <!-- Section gauche -->
+            <div class="md:w-1/2 pr-6">
+                <h3 class="text-xl font-semibold text-gray-800">Entrer en contact</h3>
+                <p class="text-gray-600 mt-2">Comment nous trouver ?
+
                 </p>
-                <p class="mt-4 text-gray-600">Lorem ipsum dolor sitmet consectetur adipisicing elit. Maxime iure vero
-                    vel veniam eum asperiores alias voluptatum architecto, accusantium nulla deserunt exercitationem
-                    numquam fugiat corporis obcaecati sin est voluptate quod? Quia fuga officia asperiores esse nostrum
-                    beatae harum architecto est exercitationem nihil? Nulla suscipit rerum unde, accusamus tempora,
-                    magni ex in quae nam quasi voluptatum quam labore accusantium eius optio delectus expedita commodi
-                    blanditiis adipisci ipsa aliquid. Eius magni possimus error? Cupiditate eum numquam rerum explicabo
-                    illum voluptatum dolore voluptatum dolore voluptatum dolore at.</p>
-                <a href="#">
-                    <button
-                        class="px-6 py-2 bg-yellow-600 text-white font-semibold rounded-lg shadow hover:bg-yellow-500 mt-4">
-                        Voir Plus
-                    </button>
-                </a>
-            </div>
-            <div class="md:w-1/2 flex justify-center mt-6 md:mt-0">
-                <img src="img/about_femme_raisin.jpg" alt="Femme qui presente des raisins "
-                    class="rounded-lg shadow-lg w-3/4">
-            </div>
-        </div>
-    </section>
 
-    <!-- bloc sélection de vins qui va rediriger sur la page produit -->
-    <section class="bg-gray-800 flex py-16 text-center space-x-4 justify-around flex-wrap">
-        <h2 class="text-3xl font-semibold text-white">Notre sélection de Boisson <br> et Spiritueux</h2>
-        <a href="#">
-            <button class="px-12 py-3 bg-yellow-600 text-white font-semibold rounded-lg shadow hover:bg-yellow-500">
-                Voir Plus
-            </button>
-        </a>
-    </section>
+                <div class="mt-6 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <span class="hover:bg-yellow-500 bg-gray-800 text-white p-3 rounded-full">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        <p><strong>Siège Social:</strong> Institut Français du Numérique (IFRAN) </p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="hover:bg-yellow-500 bg-gray-800 text-white p-3 rounded-full">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <p><strong>Email :</strong> jesuislemail01@gmail.com</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="hover:bg-yellow-500 bg-gray-800 text-white p-3 rounded-full">
+                            <i class="fas fa-phone"></i>
+                        </span>
+                        <p><strong>Appellez-nous:</strong> (+225) 070 052 2245</p>
+                    </div>
+                </div>
+                <div class="mt-6 flex space-x-3">
+                    <a href="#" class="text-gray-900"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-900"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-900"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-900"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-gray-900"><i class="fab fa-whatsapp"></i></a>
 
-    <!-- bloc "Plus que du vin" va rediriger sur la meme  -->
-    <section class="py-16 px-6 md:px-20 bg-gray-50">
-        <div class="md:flex">
-            <div class="md:w-1/2 grid grid-cols-2 gap-6 mt-12">
-                <div class="text-center">
-                    <!-- <img src="img/wine_glass-removebg-preview.png" class="h-24 justify-center" alt=""> -->
-                    <h3 class="text-xl font-semibold">Verre à vin</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet...</p>
-                </div>
-                <div class="text-center">
-                    <h3 class="text-xl font-semibold">Odeur fine</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet...</p>
-                </div>
-                <div class="text-center">
-                    <h3 class="text-xl font-semibold">Tris uniques</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet...</p>
-                </div>
-                <div class="text-center">
-                    <h3 class="text-xl font-semibold">Vieille habitude</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet...</p>
                 </div>
             </div>
+
+            <!-- Section droit (Formulaire) -->
             <div class="md:w-1/2 mt-6 md:mt-0">
-                <h2 class="text-3xl font-semibold text-gray-800">Autres catégories</h2>
-                <p class="text-red-500 font-bold">Nous avons plusieurs autres catégories que vous pouvez découvrir
-                    <a href="#"
-                        class="underline underline-offset-1 text-2xl transition-colors duration-300 hover:text-blue-500">ici</a>
-                </p>
-                <p class="mt-4 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum placeat
-                    repudiandae incidunt enim dolorum, sint tenetur ullam eveniet quod, sed illo eligendi, eius deserunt
-                    eos cumque. Illo eveniet et nobis recusandae, corporis facilis perspiciatis tenetur a saepe fuga
-                    inventore cupiditate in culpa adipisci illum error impedit earum! Nihil accusantium nisi expedita
-                    nesciunt repellendus ad explicabo. Quod incidunt commodi delectus repellat. Ducimus necessitatibus
-                    molestiae ipsam dignissimos optio commodi nisi eveniet sit facilis odio iure, iusto repellat non
-                    ratione, aliquid qui maxime.</p>
-                <!-- <button
-                    class="px-6 py-2 bg-yellow-600 text-white font-semibold rounded-lg shadow hover:bg-yellow-500 mt-4">
-                    Voir Plus
-                </button> -->
+                <h3 class="text-xl font-semibold text-gray-800">Envoyez-nous un message </h3>
+                <form class="mt-6 space-y-4" method="#" action="#">
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" name="nom" placeholder="Nom"
+                            class="border border-gray-300 p-3 rounded w-full">
+                        <input type="text" name="prenom" placeholder="Prenom"
+                            class="border border-gray-300 p-3 rounded w-full">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" name="telephone" placeholder="Téléphone"
+                            class="border border-gray-300 p-3 rounded w-full">
+                        <input type="email" name="email" placeholder="E-mail"
+                            class="border border-gray-300 p-3 rounded w-full">
+                    </div>
+                    <input type="text" name="sujet" placeholder="Sujet"
+                        class="border border-gray-300 p-3 rounded w-full">
+                    <textarea name="message" placeholder="Message" rows="4"
+                        class="border border-gray-300 p-3 rounded w-full"></textarea>
+                    <button
+                        class="w-full hover:bg-yellow-500 bg-yellow-600 text-white py-3 rounded font-semibold">Envoyer</button>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Bloc d'accompagnement  -->
-    <section class="py-16 px-6 md:px-20 bg-white">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <img src="img/vignoble.jpg" alt="Vineyard" class="rounded-lg shadow-lg">
-            <img src="img/cheese.jpg" alt="Cheese" class="rounded-lg shadow-lg">
-            <img src="img/winery.jpg" alt="Winery" class="rounded-lg shadow-lg">
-            <img src="img/wine barrel.jpg" alt="Wine Barrels" class="rounded-lg shadow-lg">
-        </div>
-    </section>
+    <!-- Google Map -->
+    <div class="w-full h-screen mt-10">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63557.18991473977!2d-3.9583744!3d5.3673984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sci!4v1738154519707!5m2!1sfr!2sci"
+            class="w-full h-full border-0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
 
     <!-- footer  -->
     <footer class="bg-gray-800 text-white py-10 relative">
@@ -267,7 +252,6 @@
             window.scrollTo({ top: 0, behavior: "smooth" });
         });
     </script>
-
 </body>
 
 </html>
