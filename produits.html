@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page-A propos</title>
-    <link rel="icon" type="image/x-icon" href="img/Bronco_Black.jpg">
+    <title>Présentation des Vins</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite/dist/flowbite.min.js"></script>
+    <!-- Lien Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <!-- Inclure GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100 ">
     <!-- navbar   -->
     <div class="antialiased bg-gray-100 dark-mode:bg-gray-900">
         <div class="w-full text-white bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
@@ -48,33 +52,23 @@
                         href="produits.html">Nos produits</a>
                     <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                         href="#">Contact</a>
-
                 </nav>
             </div>
         </div>
     </div>
 
-    <!-- Section preentation de la page à propos  -->
-    <section class="relative h-96 bg-cover bg-no-repeat flex items-center justify-center text-white"
-        style="background-image: url('img/about_img_2.jpg');">
-        <h1 class="text-4xl font-bold ">À propos de nous</h1>
-    </section>
-
-    <!-- Bloc Qui sommes-nous ? -->
-    <section class="py-16 px-6 md:px-20 bg-gray-50">
-        <div class="md:flex md:items-center">
-            <div class="md:w-1/2">
-                <h2 class="text-3xl font-semibold text-gray-800">Qui sommes-nous ?</h2>
-                <p class="text-red-500 font-bold">BrancoWine, une entreprise qui est spécialisée dans la production de
-                    Boissons & Spiritueux
-                </p>
-                <p class="mt-4 text-gray-600">Lorem ipsum dolor sitmet consectetur adipisicing elit. Maxime iure vero
-                    vel veniam eum asperiores alias voluptatum architecto, accusantium nulla deserunt exercitationem
-                    numquam fugiat corporis obcaecati sin est voluptate quod? Quia fuga officia asperiores esse nostrum
-                    beatae harum architecto est exercitationem nihil? Nulla suscipit rerum unde, accusamus tempora,
-                    magni ex in quae nam quasi voluptatum quam labore accusantium eius optio delectus expedita commodi
-                    blanditiis adipisci ipsa aliquid. Eius magni possimus error? Cupiditate eum numquam rerum explicabo
-                    illum voluptatum dolore voluptatum dolore voluptatum dolore at.</p>
+    <!-- bloc affichage de Produits -->
+    <div class="w-full mx-auto">
+        <!-- Première section -->
+        <div class="flex items-center justify-around section flex-wrap">
+            <img src="img/dracula.png" alt="Vin Rouge" class="w-[900px] image">
+            <div class="w-1/3 bg-white p-8 shadow-lg">
+                <h2 class="text-2xl font-bold text-black">Les Rouges</h2>
+                <ul class="mt-4 text-gray-600">
+                    <li>- Cabernet Sauvignon</li>
+                    <li>- Merlot</li>
+                    <li>- Pinot Noir</li>
+                </ul>
                 <a href="#">
                     <button
                         class="px-6 py-2 bg-yellow-600 text-white font-semibold rounded-lg shadow hover:bg-yellow-500 mt-4">
@@ -82,75 +76,47 @@
                     </button>
                 </a>
             </div>
-            <div class="md:w-1/2 flex justify-center mt-6 md:mt-0">
-                <img src="img/about_femme_raisin.jpg" alt="Femme qui presente des raisins "
-                    class="rounded-lg shadow-lg w-3/4">
+        </div>
+
+        <!-- Deuxième section -->
+        <div class="flex items-center flex-row-reverse justify-around section flex-wrap">
+            <img src="img/téléchargement-removebg-preview.png" alt="Vin Blanc" class="w-[900px] image">
+            <div class="w-1/3 bg-white p-8 shadow-lg">
+                <h2 class="text-2xl font-bold">Les blancs</h2>
+                <ul class="mt-4 text-gray-600">
+                    <li>- Chardonnay</li>
+                    <li>- Sauvignon Blanc</li>
+                    <li>- Riesling</li>
+                </ul>
+                <a href="#">
+                    <button
+                        class="px-6 py-2 bg-yellow-600 text-white font-semibold rounded-lg shadow hover:bg-yellow-500 mt-4">
+                        Voir Plus
+                    </button>
+                </a>
             </div>
         </div>
-    </section>
 
-    <!-- bloc sélection de vins qui va rediriger sur la page produit -->
-    <section class="bg-gray-800 flex py-16 text-center space-x-4 justify-around flex-wrap">
-        <h2 class="text-3xl font-semibold text-white">Notre sélection de Boisson <br> et Spiritueux</h2>
-        <a href="#">
-            <button class="px-12 py-3 bg-yellow-600 text-white font-semibold rounded-lg shadow hover:bg-yellow-500">
-                Voir Plus
-            </button>
-        </a>
-    </section>
-
-    <!-- bloc "Plus que du vin" va rediriger sur la meme  -->
-    <section class="py-16 px-6 md:px-20 bg-gray-50">
-        <div class="md:flex">
-            <div class="md:w-1/2 grid grid-cols-2 gap-6 mt-12">
-                <div class="text-center">
-                    <!-- <img src="img/wine_glass-removebg-preview.png" class="h-24 justify-center" alt=""> -->
-                    <h3 class="text-xl font-semibold">Verre à vin</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet...</p>
-                </div>
-                <div class="text-center">
-                    <h3 class="text-xl font-semibold">Odeur fine</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet...</p>
-                </div>
-                <div class="text-center">
-                    <h3 class="text-xl font-semibold">Tris uniques</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet...</p>
-                </div>
-                <div class="text-center">
-                    <h3 class="text-xl font-semibold">Vieille habitude</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet...</p>
-                </div>
-            </div>
-            <div class="md:w-1/2 mt-6 md:mt-0">
-                <h2 class="text-3xl font-semibold text-gray-800">Autres catégories</h2>
-                <p class="text-red-500 font-bold">Nous avons plusieurs autres catégories que vous pouvez découvrir
-                    <a href="#"
-                        class="underline underline-offset-1 text-2xl transition-colors duration-300 hover:text-blue-500">ici</a>
-                </p>
-                <p class="mt-4 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum placeat
-                    repudiandae incidunt enim dolorum, sint tenetur ullam eveniet quod, sed illo eligendi, eius deserunt
-                    eos cumque. Illo eveniet et nobis recusandae, corporis facilis perspiciatis tenetur a saepe fuga
-                    inventore cupiditate in culpa adipisci illum error impedit earum! Nihil accusantium nisi expedita
-                    nesciunt repellendus ad explicabo. Quod incidunt commodi delectus repellat. Ducimus necessitatibus
-                    molestiae ipsam dignissimos optio commodi nisi eveniet sit facilis odio iure, iusto repellat non
-                    ratione, aliquid qui maxime.</p>
-                <!-- <button
-                    class="px-6 py-2 bg-yellow-600 text-white font-semibold rounded-lg shadow hover:bg-yellow-500 mt-4">
-                    Voir Plus
-                </button> -->
+        <!-- Troisième section -->
+        <div class="flex items-center justify-around section flex-wrap">
+            <img src="img/Toast_to_the_New_Year_with_These_Celebration-Ready_Champagnes-removebg-preview.png"
+                alt="Champagne" class="w-[900px] image">
+            <div class="w-1/3 bg-white p-8 shadow-lg">
+                <h2 class="text-2xl font-bold text-black">Les Champagnes</h2>
+                <ul class="mt-4 text-gray-600">
+                    <li>- Dom Pérignon</li>
+                    <li>- Moët</li>
+                    <li>- Nicolas Feuillate</li>
+                </ul>
+                <a href="#">
+                    <button
+                        class="px-6 py-2 bg-yellow-600 text-white font-semibold rounded-lg shadow hover:bg-yellow-500 mt-4">
+                        Voir Plus
+                    </button>
+                </a>
             </div>
         </div>
-    </section>
-
-    <!-- Bloc d'accompagnement  -->
-    <section class="py-16 px-6 md:px-20 bg-white">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <img src="img/vignoble.jpg" alt="Vineyard" class="rounded-lg shadow-lg">
-            <img src="img/cheese.jpg" alt="Cheese" class="rounded-lg shadow-lg">
-            <img src="img/winery.jpg" alt="Winery" class="rounded-lg shadow-lg">
-            <img src="img/wine barrel.jpg" alt="Wine Barrels" class="rounded-lg shadow-lg">
-        </div>
-    </section>
+    </div>
 
     <!-- footer  -->
     <footer class="bg-gray-800 text-white py-10 relative">
@@ -187,7 +153,8 @@
                                 nous</a>
                         </li>
                         <li>
-                            <a href="produits.html" class="hover:text-yellow-500 transition-colors duration-300">Nos produits</a>
+                            <a href="produits.html" class="hover:text-yellow-500 transition-colors duration-300">Nos
+                                produits</a>
                         </li>
                         <li>
                             <a href="#" class="hover:text-yellow-500 transition-colors duration-300">Contact</a>
@@ -249,7 +216,7 @@
         class="fixed bottom-5 right-5 bg-yellow-600 text-white p-4 rounded-full shadow-lg hidden transition duration-500 ease-in-out transform hover:scale-110">
         &#8679;
     </button>
-
+    <!-- Haut de page  -->
     <script>
         const scrollToTopButton = document.getElementById("scrollToTop");
 
@@ -265,7 +232,17 @@
             window.scrollTo({ top: 0, behavior: "smooth" });
         });
     </script>
-    
+
+    <!-- Inclure GSAP -->
+    <script>
+        gsap.from(".image", {
+            opacity: 0,
+            y: 50,
+            duration: 1.5,
+            stagger: 0.5,
+            ease: "power2.out"
+        });
+    </script>
 </body>
 
 </html>
